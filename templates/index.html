@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Placement Predictor</title>
+</head>
+<body>
+    <h1>Webiste Phishing Classification</h1>
+    {% if result %}
+        <p>Prediction : {{ result }}</p>
+    {% endif %}
+    <form method="post" action="/predict">
+        <label>Length of URl</label><br>
+        <input type="text" name="url_length"><br><br>
+
+        <label>Number of Dots</label><br>
+        <input type="text" name="n_dots"><br><br>
+
+        <label>Hypens</label><br>
+        <input type="text" name="n_hypens"><br><br>
+        
+        <label>Underlines</label><br>
+        <input type="text" name="n_underline"><br><br>
+
+        <label>Slash</label><br>
+        <input type="text" name="n_slash"><br><br>
+
+        <label>Question Mark</label><br>
+        <input type="text" name="n_questionmark"><br><br>
+
+        <label>Equal Signs</label><br>
+        <input type="text" name="n_equal"><br><br>
+
+        <label>At</label><br>
+        <input type="text" name="n_at"><br><br>
+
+        <label>and</label><br>
+        <input type="text" name="n_and"><br><br>
+
+        <label>Exclaimation Mark</label><br>
+        <input type="text" name="n_exclamation"><br><br>
+
+
+        <label>Space</label><br>
+        <input type="text" name="n_space"><br><br>
+
+
+        <label>Tilde</label><br>
+        <input type="text" name="n_tilde"><br><br>
+
+        <label>Comma</label><br>
+        <input type="text" name="n_comma"><br><br>
+
+
+        <label>Plus sign</label><br>
+        <input type="text" name="n_plus"><br><br>
+
+        <label>Asterick</label><br>
+        <input type="text" name="n_asterisk"><br><br>
+
+        <label>Hashtag</label><br>
+        <input type="text" name="n_hastag"><br><br>
+
+        <label>Dollar Sign</label><br>
+        <input type="text" name="n_dollar"><br><br>
+
+        <label>Percentage</label><br>
+        <input type="text" name="n_percent"><br><br>
+
+        <label>Redirection</label><br>
+        <input type="text" name="n_redirection"><br><br>
+
+
+        <input type="submit" value="Predict"><br><br>
+    </form>
+
+</body>
+</html>
